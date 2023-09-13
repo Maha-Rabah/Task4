@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto:wght@500&display=swap");
+
+:root {
+	/* ------- colors ------- */
+	--primary-color: #0d6efd;
+	--secondary-color: #19A7CE;
+	--tertiary-color: #acacb4;
+	--quaternary-color: #e4e4e7;
+	--main-padding-top: 100px;
+	--main-padding-bottom: 100px;
+	/* ---------------------- */
+
+	/* ------- fonts ------- */
+	--primary-font: "Heebo", sans-serif;
+	--secondary-font: "Roboto", sans-serif;
+	/* --------------------- */
+}
+
+body {
+	margin: 0;
+	font-family: var(--primary-font);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+	}
+.Main-Title {
+		text-align: center;
+		padding-top: var(--main-padding-top);
+	}
+
+.Main-Title h2 {
+		font-size: 3rem;
+		margin-bottom: 2rem;
+		color: var(--primary-color);;
+	}
+	
+	.Main-Title p {
+		color: gray;
+		max-width: 42rem;
+		margin: 0 auto;
+		padding-bottom: 70px;
+	}

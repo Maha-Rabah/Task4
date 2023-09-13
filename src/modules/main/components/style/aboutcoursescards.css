@@ -1,0 +1,89 @@
+.courses-con {
+    margin-top: 5rem;
+    background-color: var(--quaternary-color);
+    padding: 5rem 0;
+
+}
+
+.con-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    gap: 4rem;
+    width: 80%;
+    margin-left: 150px;
+    margin-bottom: 100px;
+}
+
+.courses-con .con-cards .Courses-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 1rem;
+    border-radius: 2rem;
+}
+
+.courses-con .con-cards .Courses-card .card-img {
+    width: 100%;
+    height: 300px;
+}
+
+.courses-con .con-cards .Courses-card .card-info {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+ .card-num {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.card-rate{
+    display: flex;
+    align-items: center;
+    color:orange;
+    font-size: 1.5rem;
+}
+.card-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.Courses-card-title{
+    padding: 0 2.5rem;
+    font-size: 2.2rem;
+    color:rgb(88, 87, 87);
+    text-transform: capitalize;
+}
+
+.Courses-card-desc {
+    padding: 0 2.5rem;
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.Courses-details {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 4rem;
+    align-items: center;
+    border-top: 2px solid gray;
+}
+
+.card-price {
+    font-size: 2rem;
+    color:rgb(88, 87, 87);
+    font-weight: 600;
+}
+
+.more {
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+

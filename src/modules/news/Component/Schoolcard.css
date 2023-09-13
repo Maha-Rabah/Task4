@@ -1,0 +1,59 @@
+
+.SchoolNews .Schoolcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(600px,1fr));
+    gap: 2rem;
+    margin-bottom: 100PX;
+}
+
+.SchoolCard {
+    height:300px;
+    display: flex;
+    background-color:var(--quaternary-color);
+}
+
+.SchoolCard .Card-left {
+    flex-basis: 30%;
+    flex-shrink: 0;
+}
+
+.SchoolCard  .Card-left-img {
+    width: 100%;
+    height: 100%;
+}
+
+.SchoolCard .Card-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.SchoolCard .Card-right h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+.SchoolCard .Card-right .Card-right-span{
+    font-size:1rem;
+    display: flex;
+    align-items: center;
+    color: gray;
+    text-transform: capitalize;
+} 
+.SchoolCard .Card-right .Card-right-icon {
+    margin-right: .5rem;
+    font-size: 1.5rem;
+}
+.SchoolCard .Card-right p{
+    font-size: 1.2rem;
+    color: gray;
+}
+
+@media(max-width:992px) {
+    .SchoolNews {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        gap: 2rem;
+    }
+}

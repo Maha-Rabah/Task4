@@ -1,0 +1,50 @@
+.category-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 4rem;
+    margin: 40px;
+}
+.section-title{
+    text-align: center;
+    padding: var(--main-padding-top);
+    padding-bottom: 10px;
+}
+.section-parg{
+    text-align: center;
+}
+.section-parg a{
+    text-decoration: none;
+}
+.gate-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #e3e8ef;
+    padding: 10px;
+}
+
+.gate-card .card-icon {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.gate-card .info {
+    padding-left: 15px;
+}
+.gate-card .info h3{
+    color: #000000b8;
+    font-size: 18px;
+    margin: 0;
+}
+.gate-card .info p {
+    color: #b9b9b9;
+    font-size: 14px;
+}
