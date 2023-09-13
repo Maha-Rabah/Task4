@@ -4,7 +4,10 @@ import "./index.css";
 import { createBrowserRouter,RouterProvider} from "react-router-dom";
 import { routes } from "./routes/Router";
 
- const router = createBrowserRouter(routes);
+ const router = createBrowserRouter(routes,
+  {
+    basename: '/Task4',
+  });
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
