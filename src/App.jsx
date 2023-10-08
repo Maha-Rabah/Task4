@@ -9,10 +9,14 @@ import {BiPhone} from 'react-icons/bi'
 import {BiLogoGmail} from 'react-icons/bi'
 import {AiFillLock} from 'react-icons/ai'
 import {BsFillPersonFill} from 'react-icons/bs'
+import { Provider } from "react-redux";
+import store from './Store';
+import { Toaster } from "react-hot-toast";
+
 
 function App() {
   return (
-    <>
+    <Provider store={store}>
     <GlobalNavbar list={[{icons:<AiOutlineQuestionCircle/>,name:"Have a question?",},
     {icons:<BiPhone/>,name:"10 20 123 456",},
     {icons:<BiLogoGmail/>,name:"info@gmail.com"},
@@ -20,8 +24,9 @@ function App() {
     {icons:<BsFillPersonFill/>,name:"Register?"}]}/>
       <HomeNavbar logo="Learner" button="Enroll Now" />
       <Outlet />
+      <Toaster/>
       <Footer />
-    </>
+    </Provider>
   );
 }
 

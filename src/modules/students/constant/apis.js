@@ -1,0 +1,1 @@
+export const apisURL="https://dummyjson.com/users"
